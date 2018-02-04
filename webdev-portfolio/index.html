@@ -1,127 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Adrian Gacayan - portfolio</title>
+  <title>Adrian Gacayan - portfolio</title>
 
-    <!--Import Bootstrap CDN-->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> -->
 
-    <!-- Import Fontawesome CDN -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- fontawesome 5 cdn -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <!-- favicon icon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-  </head>
-  <body data-spy="scroll" data-target="#ftco-navbar" data-offset="200">
+  <!-- bulma css framework -->
+  <link href="assets/bulma-0.6.2/css/bulma.css" rel="stylesheet">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Ag</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
+  <!-- my css -->
+  <link href="css/style.css" rel="stylesheet">
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="#section-home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#section-about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#section-skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#section-portfolio" class="nav-link">Portfolio</a></li>
-            <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
+</head>
+
+<body data-spy="scroll" data-target="#ag-navbar" data-offset="200">
+
+  <nav class="navbar is-black is-fixed-top" id="ag-navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-brand-link" href="index.html">
+        <img src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50" height="50">
+      </a>
+
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#section-home">Home</a>
+        <a class="navbar-item" href="#section-about">About</a>
+        <a class="navbar-item" href="#section-skills">Skills</a>
+        <a class="navbar-item" href="#section-portfolio">Portfolio</a>
+        <a class="navbar-item" href="#section-contact">Contact</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-      <div id="section-home" class="banner">
-        <img src="" alt="casual or professional photo">
-        <h1>html</h1>
-        <h4>rules</h4>
+  <div id="section-home" class="home-image">
+    <div class="home-text">
+      <h1 class="is-size-4-mobile is-size-1-desktop">Adrian Gacayan</h1>
+      <h4 class="is-size-6-mobile is-size-4-desktop">web developer</h4>
+    </div>
+    <div class="home-social columns is-mobile">
+      <a class="home-social-icon" href="#" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a class="home-social-icon" href="#" title="Google+"><i class="fab fa-google-plus-g"></i></a>
+      <a class="home-social-icon" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
+      <a class="home-social-icon" href="#" title="Codepen"><i class="fab fa-codepen"></i></a>
+    </div>
+  </div> <!-- /#section-home -->
 
-        <div class="row">
-          <ul class="d-inline">
-            <li><a href="#" title="linkedin"><i class="fa fa-linkedin text-gray"></i></a></li>
-            <li><a href="#" title="github"><i class="fa fa-github text-gray"></i></a></li>
-            <li><a href="#" title="dribble"><i class="fa fa-dribbble text-gray"></i></a></li>
-            <li><a href="#" title="facebook"><i class="fa fa-facebook text-gray"></i></a></li>
-            <li><a href="#" title="stack-overflow"><i class="fa fa-stack-overflow text-gray"></i></a></li>
-          </ul>
-        </div> <!--/.row-->
+  <div id="section-about" class="about-image">
+    <div class="about-text">
+      <h2 class="is-size-5-mobile is-size-2-desktop">about me</h2>
+      <p class="is-size-6-mobile is-size-4-desktop">husband of one, father of three</p>
+      <p class="is-size-6-mobile is-size-4-desktop">a customer service specialist wanting to change careers and pursue his love for coding</p>
+      <p class="is-size-6-mobile is-size-5-desktop">non-professional gamer, anime lover, rockstar wannabe</p>
+    </div>
+  </div>
 
-        <p>a tagline of my developer biography</p>
-      </div> <!--banner-->
+  <div id="section-skills">
+    <h2 class="is-size-5-mobile is-size-2-desktop">skills</h2>
+    <div class="columns">
+      <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>jquery</li>
+        <li>php</li>
+      </ul>
+    </div>
+  </div>
 
-      <!-- <div class="about">
-        <h2>about</h2>
-        <ul>
-          <li>personal information</li>
-          <li>educational background and trainings</li>
-          <li>work experience</li>
-        </ul> -->
+  <h2 id="section-portfolio">portfolio</h2>
+  <ul>
+    <li><a href="https://adriatrix.github.io/b3nc-gacayan-adrian/csp1/index.html">project 1</a></li>
+    <li>project 2</li>
+    <li>project 3</li>
+  </ul>
+  <!-- </div> -->
 
-        <h2>skills</h2>
-        <ul>
-          <li>html</li>
-          <li>css</li>
-          <li>js</li>
-          <li>jquery</li>
-          <li>php</li>
-          <li>html</li>
-          <li>css</li>
-          <li>js</li>
-          <li>jquery</li>
-          <li>php</li>
-          <li>html</li>
-          <li>css</li>
-          <li>js</li>
-          <li>jquery</li>
-          <li>php</li>
-          <li>html</li>
-          <li>css</li>
-          <li>js</li>
-          <li>jquery</li>
-          <li>php</li>
-          <li>html</li>
-          <li>css</li>
-          <li>js</li>
-          <li>jquery</li>
-          <li>php</li>
-          <li>html</li>
-          <li>css</li>
-          <li>js</li>
-          <li>jquery</li>
-          <li>php</li>
-        </ul>
+  <div class="footer">
+    <h2>contact me</h2>
+    <a href="#">download resume here</a>
+  </div>
 
-        <h2 id="section-portfolio">portfolio</h2>
-        <ul>
-          <li><a href="https://adriatrix.github.io/b3nc-gacayan-adrian/csp1/index.html">project 1</a></li>
-          <li>project 2</li>
-          <li>project 3</li>
-        </ul>
-      <!-- </div> -->
 
-      <div class="footer">
-        <h2>contact me</h2>
-        <a href="#">download resume here</a>
-      </div>
+  <!-- jquery minified js -->
+  <script src="js/jquery-3.2.1.min.js"></script>
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/script.js"></script>
+  <!-- custom js script -->
+  <script src="js/script.js"></script>
 
-  </body>
+</body>
 </html>

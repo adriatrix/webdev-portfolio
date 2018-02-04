@@ -1,64 +1,28 @@
-// scroll
-	var scrollWindow = function() {
-		$(window).scroll(function(){
-			var $w = $(this),
-					st = $w.scrollTop(),
-					navbar = $('.ftco_navbar'),
-					sd = $('.js-scroll-wrap');
-
-			if (st > 150) {
-				if ( !navbar.hasClass('scrolled') ) {
-					navbar.addClass('scrolled');
-				}
-			}
-			if (st < 150) {
-				if ( navbar.hasClass('scrolled') ) {
-					navbar.removeClass('scrolled sleep');
-				}
-			}
-			if ( st > 350 ) {
-				if ( !navbar.hasClass('awake') ) {
-					navbar.addClass('awake');
-				}
-
-				if(sd.length > 0) {
-					sd.addClass('sleep');
-				}
-			}
-			if ( st < 350 ) {
-				if ( navbar.hasClass('awake') ) {
-					navbar.removeClass('awake');
-					navbar.addClass('sleep');
-				}
-				if(sd.length > 0) {
-					sd.removeClass('sleep');
-				}
-			}
-		});
-	};
-	scrollWindow();
+console.log ("script is working");
 
 
-  // navigation
-  	var OnePageNav = function() {
-  		$(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
-  		 	e.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
 
-  		 	var hash = this.hash,
-  		 			navToggler = $('.navbar-toggler');
-  		 	$('html, body').animate({
-  		    scrollTop: $(hash).offset().top
-  		  }, 700, 'easeInOutExpo', function(){
-  		    window.location.hash = hash;
-  		  });
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
 
-  		  if ( navToggler.is(':visible') ) {
-  		  	navToggler.click();
-  		  }
-  		});
-  		$('body').on('activate.bs.scrollspy', function () {
-  		  console.log('nice');
-  		})
-  	};
-  	OnePageNav();
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
