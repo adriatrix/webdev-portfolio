@@ -24,6 +24,10 @@ html {
 
 .navbar-brand-link {
   height: 50px;
+  padding: 0;
+  margin: 3px;
+  border: 1px solid grey;
+  border-radius: 3px;
 }
 
 .home-image {
@@ -54,7 +58,8 @@ html {
 .home-social {
   display: inline-block;
   position: absolute;
-  top: 95%;
+  /* top: 95%; */
+  bottom: 2%;
   left: 52%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
@@ -118,6 +123,34 @@ a:hover {
 }
 
 .about-text {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+}
+
+.works-image {
+  /* background-image: url("../img/portrait.jpg"); */
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+  /* border: 1px solid black; */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+  /* background-attachment: fixed; */
+
+  color: #859196;
+}
+
+.works-text {
     width: 100%;
     text-align: center;
     position: absolute;
