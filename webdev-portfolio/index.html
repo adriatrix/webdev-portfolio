@@ -44,11 +44,10 @@
 
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
-        <!-- <a class="navbar-item" href="#section-home">Home</a> -->
-        <a class="navbar-item" href="#section-about">Work</a>
-        <!-- <a class="navbar-item" href="#section-skills">About</a> -->
-        <a class="navbar-item" href="#section-works">Works</a>
-        <a class="navbar-item" href="#section-contact">Contact</a>
+        <a class="navbar-item" href="#section-home"><span class="is-size-7">go</span>Home</a>
+        <a class="navbar-item" href="#section-about">About<span class="is-size-7">me</span></a>
+        <a class="navbar-item" href="#section-works"><span class="is-size-7">my</span>Works</a>
+        <!-- <a class="navbar-item" href="#section-contact">Contact</a> -->
       </div>
     </div>
   </nav>
@@ -56,7 +55,7 @@
   <div id="section-home" class="home-image">
     <div class="home-text">
       <h1 class="is-size-4-mobile is-size-1-desktop">Adrian Gacayan</h1>
-      <h4 class="is-size-6-mobile is-size-4-desktop">web developer</h4>
+      <h4 class="is-size-6-mobile is-size-4-desktop">web <span class="is-size-5-mobile is-size-3-desktop">developer</span></h4>
     </div>
     <div class="home-social columns is-mobile">
       <a class="home-social-icon" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -70,14 +69,14 @@
     <div class="about-text">
       <div class="container">
         <div class="columns is-centered is-mobile">
-          <div class="column"><i class="fab fa-html5"></i></div>
-          <div class="column"><i class="fab fa-css3-alt"></i></div>
-          <div class="column"><i class="fab fa-js"></i></div>
-          <div class="column"><i class="fab fa-php"></i></div>
-          <div class="column"><i class="fab fa-laravel"></i></div>
+          <div class="column"><i class="fab fa-php fa-3x"></i></div>
+          <div class="column"><i class="fab fa-css3-alt fa-3x"></i></div>
+          <div class="column"><i class="fab fa-html5 fa-3x"></i></div>
+          <div class="column"><i class="fab fa-js fa-3x"></i></div>
+          <div class="column"><i class="fab fa-git-square fa-3x"></i></div>
         </div>
       </div>
-      <h2 class="is-size-5-mobile is-size-2-desktop">about me</h2>
+      <h2 class="is-size-5-mobile is-size-2-desktop">About <span class="is-size-6-mobile is-size-3-desktop">me</span></h2>
       <p>husband of one, father of three</p>
       <p>a customer service specialist wanting to change careers and pursue his love for coding</p>
       <p class="is-size-6">non-professional gamer, anime lover, rockstar wannabe</p>
@@ -88,21 +87,45 @@
   <div id="section-works" class="works-image">
     <div class="works-text">
       <div class="container">
-        <h2 class="is-size-5-mobile is-size-2-desktop">my works</h2>
-        <div class="columns is-centered is-mobile">
-          <div class="column"><a href="https://adriatrix.github.io/b3nc-gacayan-adrian/csp1/index.html">project 1</a></div>
-          <div class="column"><a href="#">project 2</a></div>
-          <div class="column"><a href="#">project 3</a></div>
+        <h2 class="is-size-5-mobile is-size-2-desktop outline-this"><span class="is-size-6-mobile is-size-3-desktop">my</span> Works</h2>
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+          </div>
+        </div>
+        <div class="columns is-mobile box">
+          <div class="column is-4"><a class="button is-large is-grey is-outlined" href="https://adriatrix.github.io/b3nc-gacayan-adrian/csp1/index.html"><i class="fas fa-external-link-alt fa-2x"></i> project 1</a></div>
+          <div class="column is-4"><a class="button is-large is-grey is-outlined is-loading" href="#"><i class="fas fa-external-link-alt fa-2x"></i> project 2</a></div>
+          <div class="column is-4"><a class="button is-large is-grey is-outlined is-static" href="#"><i class="fas fa-external-link-alt fa-2x"></i> project 3</a></div>
+        </div>
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <hr>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-2 is-offset-5 box">
+            <div class="tooltip">
+              <a href="https://www.linkedin.com/in/adriatrix/"><i class="fas fa-download fa-2x"></i> resume</a>
+              <span class="tooltiptext">Download my resume at my LinkedIn page</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="footer">
-    <h2>contact me</h2>
-    <a href="#">download resume here</a>
-  </div>
-
+  <footer class="footer my-footer">
+  	<div class="container">
+  		<div class="content has-text-centered">
+  			<p>Copyright &copy; 2018 by <a class="is-white" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
+  			<p>
+  				<a href="https://bulma.io">
+    				<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+  				</a>
+  			</p>
+  		</div>
+  	</div>
+  </footer>
 
   <!-- jquery minified js -->
   <script src="js/jquery-3.2.1.min.js"></script>
