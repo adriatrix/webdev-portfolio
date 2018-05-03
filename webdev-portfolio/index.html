@@ -12,8 +12,6 @@
   <!-- fontawesome 5 cdn -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-
   <!-- favicon icon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -46,9 +44,9 @@
 
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#section-home"><span class="is-size-7">go</span>Home</a>
-        <a class="navbar-item" href="#section-about">About<span class="is-size-7">me</span></a>
-        <a class="navbar-item" href="#section-works"><span class="is-size-7">my</span>Works</a>
+        <a class="navbar-item my-links" href="#section-home"><span class="is-size-7">go</span>Home</a>
+        <a class="navbar-item my-links" href="#section-about">About<span class="is-size-7">me</span></a>
+        <a class="navbar-item my-links" href="#section-works"><span class="is-size-7">my</span>Works</a>
         <!-- <a class="navbar-item" href="#section-contact">Contact</a> -->
       </div>
     </div>
@@ -103,9 +101,9 @@
           </div>
         </div>
         <div class="columns box my-subtext">
-          <div class="column is-4"><a class="button is-large is-grey is-outlined" href="https://adriatrix.github.io/b3nc-gacayan-adrian/csp1/index.html"><i class="fas fa-external-link-alt fa-2x"></i> project 1</a></div>
-          <div class="column is-4"><a class="button is-large is-grey is-outlined" href="https://adriatrix-csp2.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 2</a></div>
-          <div class="column is-4"><a class="button is-large is-grey is-outlined is-static" href="https://a-cube.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 3</a></div>
+          <div class="column is-4"><a class="button is-large is-grey is-outlined" target="_blank" href="https://team-overbreak.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 1</a></div>
+          <div class="column is-4"><a class="button is-large is-grey is-outlined" target="_blank" href="https://adriatrix-csp2.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 2</a></div>
+          <div class="column is-4"><a class="button is-large is-grey is-outlined" target="_blank" href="https://a-cube.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 3</a></div>
         </div>
         <div class="columns">
           <div class="column is-6 is-offset-3">
@@ -127,7 +125,7 @@
         </div>
       </div>
   		<div class="content has-text-centered">
-  			<p>Copyright &copy; 2018 by <a class="is-white" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
+  			<p>Copyright &copy; 2018 by <a class="is-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
   			<p>
   				<a href="https://bulma.io">
     				<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
@@ -137,11 +135,38 @@
   	</div>
   </footer>
 
-  <!-- jquery minified js -->
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- jquery js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
   <!-- custom js script -->
   <script src="js/script.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a.my-links").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
 
 </body>
 </html>
