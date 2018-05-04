@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   <title>Adrian Gacayan - portfolio</title>
 
 
+  <!-- bootstrap css framework -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <!-- fontawesome 5 cdn -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -19,52 +22,53 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Noticia+Text|Play|Raleway" rel="stylesheet">
 
-  <!-- bulma css framework -->
-  <link href="assets/bulma-0.6.2/css/bulma.css" rel="stylesheet">
-
   <!-- my css -->
   <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body data-spy="scroll" data-target="#ag-navbar" data-offset="200">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ag-navbar" style="background-color: black;">
+    <a class="navbar-brand" href="index.html">
+      <img class="navbar-brand-link" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
+    </a>
+    <button class="navbar-toggler btn btn-lg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <nav class="navbar is-black is-fixed-top" id="ag-navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a href="index.html">
-        <img class="navbar-brand-link" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50" height="50">
-      </a>
-
-      <button class="button navbar-burger" data-target="navMenu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="navbar-menu" id="navMenu">
-      <div class="navbar-end">
-        <a class="navbar-item my-links" href="#section-home"><span class="is-size-7">go</span>Home</a>
-        <a class="navbar-item my-links" href="#section-about">About<span class="is-size-7">me</span></a>
-        <a class="navbar-item my-links" href="#section-works"><span class="is-size-7">my</span>Works</a>
-        <!-- <a class="navbar-item" href="#section-contact">Contact</a> -->
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item text-center">
+          <a class="nav-link my-links" href="#section-home">Home</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link my-links" href="#section-about">About</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link my-links" href="#section-works">Works</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="nav-link my-links" href="#section-contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div id="section-home" class="home-image">
-    <div class="home-text has-text-white">
+  <div id="section-home" class="home-image is-mobile">
+    <div class="home-text text-white">
       <p class="is-size-3-mobile is-size-2-tablet is-size-1-desktop">Adrian Gacayan</p>
       <p class="is-size-6-mobile is-size-5-tablet is-size-4-desktop my-subtext">web <span class="is-size-5-mobile is-size-3-desktop">developer</span></p>
     </div>
-    <div class="home-social columns is-mobile">
-      <a class="home-social-icon" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-      <a class="home-social-icon" href="https://plus.google.com/u/0/+AdrianGacayan" title="Google+"><i class="fab fa-google-plus-g"></i></a>
-      <a class="home-social-icon" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
-      <a class="home-social-icon" href="https://codepen.io/adriatrix" title="Codepen"><i class="fab fa-codepen"></i></a>
-      <a class="home-social-icon" href="https://steamcommunity.com/id/adriatrix/" title="Steam"><i class="fab fa-steam"></i></a>
-    </div>
   </div> <!-- /#section-home -->
+  <div class="my-social is-mobile">
+    <a class="home-social-icon" target="_blank" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a class="home-social-icon" target="_blank" href="https://plus.google.com/u/0/+AdrianGacayan" title="Google+"><i class="fab fa-google-plus-g"></i></a>
+    <a class="home-social-icon" target="_blank" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
+    <a class="home-social-icon" target="_blank" href="https://codepen.io/adriatrix" title="Codepen"><i class="fab fa-codepen"></i></a>
+    <a class="home-social-icon" target="_blank" href="https://steamcommunity.com/id/adriatrix/" title="Steam"><i class="fab fa-steam"></i></a>
+  </div>
 
   <div id="section-about" class="about-image">
     <div class="about-text">
@@ -90,12 +94,9 @@
 
 
   <div id="section-works" class="works-image">
-    <!-- <video autoplay muted loop id="myVideo">
-      <source src="img/rain.mp4" type="video/mp4">
-    </video> -->
     <div class="works-text">
       <div class="container">
-        <h2 class="is-size-5-mobile is-size-2-desktop outline-this"><span class="is-size-6-mobile is-size-3-desktop">my</span> Works</h2>
+        <h2 class="is-size-5-mobile is-size-2-desktop"><span class="is-size-6-mobile is-size-3-desktop">my</span> Works</h2>
         <div class="columns">
           <div class="column is-6 is-offset-3">
           </div>
@@ -114,29 +115,45 @@
     </div>
   </div>
 
-  <footer class="footer my-footer">
-  	<div class="container">
-      <div class="columns">
-        <div class="column is-2 is-offset-5 box has-text-centered has-text-black">
-          <div class="tooltip is-warning">
-            <a href="https://www.linkedin.com/in/adriatrix/"><i class="fas fa-download fa-2x"></i>  curriculum vitae</a>
-            <span class="tooltiptext">Download my CV at my LinkedIn page</span>
+  <div id="section-contact" class="contact-image">
+    <div class="contact-text">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col">
           </div>
         </div>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <form class="g-recaptcha" accept-charset="UTF-8" action="https://usebasin.com/f/88cfc6db015b" enctype="multipart/form-data" method="POST">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-header h3">Let's keep in touch</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="email-address">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message-box">Your Message</label>
+                <textarea class="form-control" rows="4" name="comment" required></textarea>
+              </div>
+              <button class="btn btn-secondary" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
       </div>
-  		<div class="content has-text-centered">
-  			<p>Copyright &copy; 2018 by <a class="is-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
-  			<p>
-  				<a href="https://bulma.io">
-    				<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-  				</a>
-  			</p>
-  		</div>
-  	</div>
-  </footer>
+    </div>
+    <div class="foot-left">
+      <p>&copy; 2018 <a class="is-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
+    </div>
+    <div class="foot-right">
+      <a class="btn btn-warning btn-sm align-center" data-toggle="tooltip" data-placement="top" title="Download my CV at my LinkedIn page" target="_blank" href="https://www.linkedin.com/in/adriatrix/"><i class="fas fa-download fa-2x"></i>  curriculum vitae</a>
+    </div>
+  </div>
 
-  <!-- jquery js -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- bootstrap scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
   <!-- custom js script -->
   <script src="js/script.js"></script>
