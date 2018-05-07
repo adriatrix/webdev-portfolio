@@ -8,12 +8,17 @@
 
   <title>Adrian Gacayan - portfolio</title>
 
+  <!-- normalize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
 
   <!-- bootstrap css framework -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <!-- fontawesome 5 cdn -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- devicons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   <!-- favicon icon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -25,131 +30,155 @@
   <!-- my css -->
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- google recaptcha api -->
+  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </head>
 
 <body data-spy="scroll" data-target="#ag-navbar" data-offset="200">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ag-navbar" style="background-color: black;">
-    <a class="navbar-brand" href="index.html">
-      <img class="navbar-brand-link" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
-    </a>
-    <button class="navbar-toggler btn btn-lg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ag-navbar" style="background-color: black;">
+      <a class="navbar-brand" href="index.html">
+        <img class="navbar-brand-link" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
+      </a>
+      <button class="navbar-toggler btn btn-lg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item text-center">
-          <a class="nav-link my-links" href="#section-home">Home</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link my-links" href="#section-about">About</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link my-links" href="#section-works">Works</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link my-links" href="#section-contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div id="section-home" class="home-image is-mobile">
-    <div class="home-text text-white">
-      <p class="is-size-3-mobile is-size-2-tablet is-size-1-desktop">Adrian Gacayan</p>
-      <p class="is-size-6-mobile is-size-5-tablet is-size-4-desktop my-subtext">web <span class="is-size-5-mobile is-size-3-desktop">developer</span></p>
-    </div>
-  </div> <!-- /#section-home -->
-  <div class="my-social is-mobile">
-    <a class="home-social-icon" target="_blank" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-    <a class="home-social-icon" target="_blank" href="https://plus.google.com/u/0/+AdrianGacayan" title="Google+"><i class="fab fa-google-plus-g"></i></a>
-    <a class="home-social-icon" target="_blank" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
-    <a class="home-social-icon" target="_blank" href="https://codepen.io/adriatrix" title="Codepen"><i class="fab fa-codepen"></i></a>
-    <a class="home-social-icon" target="_blank" href="https://steamcommunity.com/id/adriatrix/" title="Steam"><i class="fab fa-steam"></i></a>
-  </div>
-
-  <div id="section-about" class="about-image">
-    <div class="about-text">
-      <div class="container">
-        <div class="columns is-centered is-mobile">
-          <div class="column"><i class="fab fa-php fa-3x"></i></div>
-          <div class="column"><i class="fab fa-css3-alt fa-3x"></i></div>
-          <div class="column"><i class="fab fa-html5 fa-3x"></i></div>
-          <div class="column"><i class="fab fa-js fa-3x"></i></div>
-          <div class="column"><i class="fab fa-git-square fa-3x"></i></div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-center">
+            <a class="nav-link my-links" href="#section-home">Home</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link my-links" href="#section-about">About</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link my-links" href="#section-works">Works</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link my-links" href="#section-contact">Contact</a>
+          </li>
+        </ul>
       </div>
-      <h2 class="is-size-5-mobile is-size-2-desktop">About <span class="is-size-6-mobile is-size-3-desktop">me</span></h2>
-      <div class="my-subtext is-size-5-tablet is-size-6-mobile">
-        <p>husband of one, father of three</p>
-        <p>a customer service specialist wanting to change careers and pursue his love for coding</p>
-        <p class="is-size-6">non-professional gamer, anime lover, rockstar wannabe</p>
+    </nav>
+
+    <div id="section-home" class="home-image">
+      <div class="home-text text-white">
+        <p class="h1">Adrian Gacayan</p>
+        <p class="h4 my-subtext">web <span class="is-size-5-mobile is-size-3-desktop">developer</span></p>
       </div>
+    </div> <!-- /#section-home -->
+    <div class="my-social is-mobile">
+      <a class="home-social-icon" target="_blank" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a class="home-social-icon" target="_blank" href="https://plus.google.com/u/0/+AdrianGacayan" title="Google+"><i class="fab fa-google-plus-g"></i></a>
+      <a class="home-social-icon" target="_blank" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
+      <a class="home-social-icon" target="_blank" href="https://codepen.io/adriatrix" title="Codepen"><i class="fab fa-codepen"></i></a>
+      <a class="home-social-icon" target="_blank" href="https://steamcommunity.com/id/adriatrix/" title="Steam"><i class="fab fa-steam"></i></a>
     </div>
-  </div>
 
-
-
-
-  <div id="section-works" class="works-image">
-    <div class="works-text">
-      <div class="container">
-        <h2 class="is-size-5-mobile is-size-2-desktop"><span class="is-size-6-mobile is-size-3-desktop">my</span> Works</h2>
-        <div class="columns">
-          <div class="column is-6 is-offset-3">
-          </div>
+    <div id="section-about" class="about-image">
+      <div class="circle one"></div>
+      <div class="circle two"></div>
+      <div class="circle three"></div>
+      <div class="about-text">
+        <div class="row">
+          <div class="col about-icon one"><i class="devicon-html5-plain-wordmark"></i></div>
+          <div class="col about-icon two"><i class="devicon-css3-plain-wordmark"></i></div>
+          <div class="col about-icon three"><i class="devicon-javascript-plain"></i></div>
+          <div class="col about-icon four"><i class="devicon-jquery-plain-wordmark"></i></div>
+          <div class="col about-icon two"><i class="devicon-git-plain-wordmark"></i></div>
+          <div class="col about-icon three"><i class="devicon-mysql-plain-wordmark"></i></div>
+          <div class="col about-icon one"><i class="devicon-php-plain"></i></div>
+          <div class="col about-icon four"><i class="devicon-laravel-plain-wordmark"></i></div>
         </div>
-        <div class="columns box my-subtext">
-          <div class="column is-4"><a class="button is-large is-grey is-outlined" target="_blank" href="https://team-overbreak.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 1</a></div>
-          <div class="column is-4"><a class="button is-large is-grey is-outlined" target="_blank" href="https://adriatrix-csp2.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 2</a></div>
-          <div class="column is-4"><a class="button is-large is-grey is-outlined" target="_blank" href="https://a-cube.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 3</a></div>
-        </div>
-        <div class="columns">
-          <div class="column is-6 is-offset-3">
-            <hr>
-          </div>
+        <h2 class="h4">About <span class="h5">me</span></h2>
+        <div class="my-subtext h6">
+          <p>husband of one, father of three<br>a customer service specialist wanting to change careers and pursue his love for coding<br>non-professional gamer, anime lover, rockstar wannabe</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="section-contact" class="contact-image">
-    <div class="contact-text">
-      <div class="container">
+    <div id="section-works" class="works-image">
+      <div class="works-text p-2">
         <div class="row justify-content-md-center">
           <div class="col">
-            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            <h2 class="h4 works-title"><span class="h5">my</span> Works</h2>
+          </div>
+        </div>
+        <div class="row justify-content-md-center my-subtext my-3">
+          <div class="col works-desc-container px-5">
+            <p class="works-desc"></p>
+          </div>
+        </div>
+        <div class="row my-subtext">
+          <div class="col h4"><a class="btn btn-lg text-white btn-outline-primary" id="btnOver" target="_blank" href="https://team-overbreak.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 1</a></div>
+          <div class="col h4"><a class="btn btn-lg text-white btn-outline-primary" id="btnPop" target="_blank" href="https://adriatrix-csp2.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 2</a></div>
+          <div class="col h4"><a class="btn btn-lg text-white btn-outline-primary" id="btnCube" target="_blank" href="https://a-cube.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 3</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-contact" class="contact-image">
+      <div class="contact-text">
+        <div class="row justify-content-md-center">
+          <div class="col-md-8">
             <form class="g-recaptcha" accept-charset="UTF-8" action="https://usebasin.com/f/88cfc6db015b" enctype="multipart/form-data" method="POST">
               <div class="card text-white bg-dark mb-3">
                 <div class="card-header h3">Let's keep in touch</div>
                 <div class="card-body">
-                  <div class="form-group">
-                    <label for="email-address">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-row">
+                        <div class="col-sm-12 col-md-6">
+                          <div class="form-group">
+                            <!-- <label for="name">Name</label> -->
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <div class="form-group">
+                            <!-- <label for="email-address">Email Address</label> -->
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <!-- <label for="message-box">Your Message</label> -->
+                        <textarea class="form-control" rows="4" name="comment" placeholder="Your Message" required></textarea>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="message-box">Your Message</label>
-                    <textarea class="form-control" rows="4" name="comment" required></textarea>
-                  </div>
+                  <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-theme="dark"></div>
+                  <!-- <input class="btn btn-secondary" type="submit" value="Send"> -->
                   <button class="btn btn-secondary" type="submit">Send</button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        <div class="row justify-content-md-center">
-          <div class="col">
-            <p>&copy; 2018 <a class="is-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
+        <div class="row">
+          <div class="col text-center">
+            <p>&copy; 2018 <a class="text-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
           </div>
-          <div class="col">
-            <a class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Download my CV at my LinkedIn page" target="_blank" href="https://www.linkedin.com/in/adriatrix/"><i class="fas fa-download fa-2x"></i>  curriculum vitae</a>
-          </div>
+          <!-- <div class="col">
+            <div class="form-row float-right">
+              <div class="col-auto align-center">
+                <span>curriculum vitae</span>
+              </div>
+              <div class="col-auto">
+                <a class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="download my CV" download="Adrian Gacayan" href="assets/adrianGacayan.pdf"><i class="fas fa-download fa-2x"></i> Save</a>
+              </div>
+              <div class="col-auto">
+                <a class="btn btn-outline-primary btn-sm" data-toggle="tooltip" data-placement="top" title="view my CV" href="assets/adrianGacayan.pdf"><i class="fas fa-eye fa-2x"></i> View</a>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>
-  </div>
+  </div> <!-- div.container-fluid -->
 
   <!-- bootstrap scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
