@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
 
     $('.navbar-nav').find('a').on('click', function(e){
       $('.navbar-toggler').trigger('click');
@@ -26,8 +26,7 @@ $( document ).ready(function() {
         $(".works-title").html("<span class='h5'>my</span> Works");
         $(".works-desc").html("");
       }).fadeTo(0, 0.70);
-    }
-  );
+    });
 
     $("#btnPop").hover(function () {
       $(".works-image").stop(true, true);
@@ -46,8 +45,7 @@ $( document ).ready(function() {
         $(".works-title").html("<span class='h5'>my</span> Works");
         $(".works-desc").html("");
       }).fadeTo(0, 0.70);
-    }
-  );
+    });
 
     $("#btnOver").hover(function () {
       $(".works-image").stop(true, true);
@@ -66,7 +64,6 @@ $( document ).ready(function() {
         $(".works-title").html("<span class='h5'>my</span> Works");
         $(".works-desc").html("");
       }).fadeTo(0, 0.70);
-    }
-  );
+    });
 
 });

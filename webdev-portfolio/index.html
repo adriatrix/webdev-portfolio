@@ -79,23 +79,71 @@
     </div>
 
     <div id="section-about" class="about-image">
-      <div class="circle one"></div>
-      <div class="circle two"></div>
-      <div class="circle three"></div>
-      <div class="about-text">
-        <div class="row">
-          <div class="col about-icon one"><i class="devicon-html5-plain-wordmark"></i></div>
-          <div class="col about-icon two"><i class="devicon-css3-plain-wordmark"></i></div>
-          <div class="col about-icon three"><i class="devicon-javascript-plain"></i></div>
-          <div class="col about-icon four"><i class="devicon-jquery-plain-wordmark"></i></div>
-          <div class="col about-icon two"><i class="devicon-git-plain-wordmark"></i></div>
-          <div class="col about-icon three"><i class="devicon-mysql-plain-wordmark"></i></div>
-          <div class="col about-icon one"><i class="devicon-php-plain"></i></div>
-          <div class="col about-icon four"><i class="devicon-laravel-plain-wordmark"></i></div>
+      <div class="row mt-5">
+        <div class="col profile-container">
+          <img src="img/avatar.jpg" alt="Profile Pic" class="my-profile" id="avataro">
+          <h2 class="h4">About <span class="h5">me</span></h2>
+          <div class="my-subtext h6">
+            <p>husband of one, father of three<br>a customer service specialist wanting to change careers and pursue his love for coding<br>non-professional gamer, anime lover, rockstar wannabe</p>
+          </div>
         </div>
-        <h2 class="h4">About <span class="h5">me</span></h2>
-        <div class="my-subtext h6">
-          <p>husband of one, father of three<br>a customer service specialist wanting to change careers and pursue his love for coding<br>non-professional gamer, anime lover, rockstar wannabe</p>
+      </div>
+      <div id="svgContainer">
+        <svg id="svg1" width="0" height="0" >
+          <path
+          id="path1"
+          d="M0 0"
+          stroke="#000"
+          fill="none"
+          stroke-width="1px";/>
+          <path
+          id="path2"
+          d="M0 0"
+          stroke="#000"
+          fill="none"
+          stroke-width="1px";/>
+          <path
+          id="path3"
+          d="M0 0"
+          stroke="#000"
+          fill="none"
+          stroke-width="1px";/>
+          <path
+          id="path4"
+          d="M0 0"
+          stroke="#000"
+          fill="none"
+          stroke-width="1px";/>
+          <path
+          id="path5"
+          d="M0 0"
+          stroke="#000"
+          fill="none"
+          stroke-width="1px";/>
+          <path
+          id="path6"
+          d="M0 0"
+          stroke="#000"
+          fill="none"
+          stroke-width="1px";/>
+          <path
+          id="path7"
+          d="M0 0"
+          stroke="#000"
+          fill="none"
+          stroke-width="1px";/>
+        </svg>
+      </div>
+      <div class="about-text">
+        <div class="row justify-content-center">
+          <!-- <div id="giti" class="col-lg about-icon"><i class="devicon-git-plain-wordmark"></i></div> -->
+          <div id="htmli" class="col-lg col-md-3 col-sm-3 col-3 about-icon"><i class="devicon-html5-plain-wordmark"></i></div>
+          <div id="cssi" class="col-lg col-md-3 col-sm-3 col-3 about-icon"><i class="devicon-css3-plain-wordmark"></i></div>
+          <div id="jsi" class="col-lg col-md-3 col-sm-3 col-3 about-icon"><i class="devicon-javascript-plain"></i></div>
+          <div id="jqueryi" class="col-lg col-md-3 col-sm-3 col-3 about-icon"><i class="devicon-jquery-plain-wordmark"></i></div>
+          <div id="mysqli" class="col-lg col-md-3 offset-md-1 col-sm-3 offset-sm-1 col-3 offset-1 about-icon"><i class="devicon-mysql-plain-wordmark"></i></div>
+          <div id="phpi" class="col-lg col-md-3 col-sm-3 col-3 about-icon"><i class="devicon-php-plain"></i></div>
+          <div id="laraveli" class="col-lg col-md-4 col-sm-4 col-4 about-icon"><i class="devicon-laravel-plain-wordmark"></i></div>
         </div>
       </div>
     </div>
@@ -187,6 +235,10 @@
 
   <!-- custom js script -->
   <script src="js/script.js"></script>
+
+  <!-- svgDraw js script from alojzije @ github -->
+  <script src="js/svgDraw.js"></script>
+  <!-- <script src="js/jquery.html-svg-connect.js"></script> -->
 
   <script>
     $(document).ready(function(){
